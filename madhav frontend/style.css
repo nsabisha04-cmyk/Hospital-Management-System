@@ -1,0 +1,679 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0077b6, #90e0ef);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: white;
+    width: 380px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.login-container form {
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #bde0fe;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #0077b6;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #005f8a;
+}
+/* Dashboard */
+
+.dashboard {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.dashboard h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.dashboard h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.welcome {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.modules {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.module {
+    background-color: white;
+    color: #0077b6;
+    padding: 30px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.module span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.module:hover {
+    transform: translateY(-5px);
+    background-color: #e0f7ff;
+}
+
+.logout {
+    color: #d62828;
+}
+/* =========================================
+   DOCTOR PAGE
+   ========================================= */
+
+.doctors-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+.doctors-container h1 {
+    text-align: center;
+    color: #0077b6;
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.doctors-container h2 {
+    text-align: center;
+    color: #023e8a;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.doctors-container h3 {
+    color: #0077b6;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   DOCTOR FORM
+   ========================================= */
+
+.doctors-container form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 25px;
+    background-color: #f1f9ff;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.doctors-container form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    color: #023e8a;
+    font-weight: bold;
+}
+
+.doctors-container form input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #90caf9;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    outline: none;
+}
+
+.doctors-container form input:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.25);
+}
+
+
+/* =========================================
+   ADD / UPDATE BUTTON
+   ========================================= */
+
+.doctors-container form button {
+    display: block;
+    width: 200px;
+    margin: 25px auto 5px auto;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0077b6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.doctors-container form button:hover {
+    background-color: #023e8a;
+}
+
+
+/* =========================================
+   DOCTOR TABLE
+   ========================================= */
+
+.doctors-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.doctors-container table th {
+    background-color: #0077b6;
+    color: white;
+    padding: 13px 10px;
+    text-align: center;
+}
+
+.doctors-container table td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #d9eaf7;
+}
+
+.doctors-container table tr:nth-child(even) {
+    background-color: #f1f9ff;
+}
+
+.doctors-container table tr:hover {
+    background-color: #e0f4ff;
+}
+
+
+/* =========================================
+   EDIT BUTTON
+   ========================================= */
+
+.doctors-container table a[href*="edit"] {
+    display: inline-block;
+    padding: 7px 14px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.doctors-container table a[href*="edit"]:hover {
+    background-color: #023e8a;
+}
+
+
+/* =========================================
+   DELETE BUTTON
+   ========================================= */
+
+.doctors-container table a[href*="delete"] {
+    display: inline-block;
+    padding: 7px 14px;
+    background-color: #d62828;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.doctors-container table a[href*="delete"]:hover {
+    background-color: #a4161a;
+}
+
+
+/* =========================================
+   BACK TO DASHBOARD
+   ========================================= */
+
+.doctors-container .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #023e8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.doctors-container .back-button:hover {
+    background-color: #0077b6;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+   ========================================= */
+
+.doctors-container p {
+    text-align: center;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .doctors-container {
+        width: 95%;
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .doctors-container table {
+        min-width: 850px;
+    }
+
+    .doctors-container h1 {
+        font-size: 28px;
+    }
+
+    .doctors-container h2 {
+        font-size: 21px;
+    }
+}
+@media (max-width: 800px) {
+    /* existing mobile CSS */
+}
+
+/* Doctor Page CSS starts here */
+
+.doctors-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+.doctors-container form select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #90caf9;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: white;
+    outline: none;
+}
+
+.doctors-container form select:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.25);
+}
+
+
+.doctors-container form select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #90caf9;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: white;
+    outline: none;
+}
+
+.doctors-container form select:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.25);
+}
+/* =========================================
+   HOSPITAL INNER PAGES
+   ========================================= */
+
+/* FIX FOR DOCTOR AND PATIENT PAGES */
+
+body.hospital-page {
+    height: auto !important;
+    min-height: 100vh !important;
+    display: block !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+body.hospital-page .doctors-container {
+    margin: 40px auto !important;
+}
+/* ================================
+   DEPARTMENT TABLE
+================================ */
+
+.departments-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #f0f8ff;
+}
+
+.departments-container th {
+    background: #087fbd;
+    color: white;
+    padding: 14px 10px;
+    text-align: left;
+}
+
+.departments-container td {
+    padding: 14px 10px;
+    border-bottom: 1px solid #cce6f5;
+    vertical-align: middle;
+}
+
+.departments-container th:last-child,
+.departments-container td:last-child {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.departments-container td a {
+    display: inline-block;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.departments-container td a:first-child {
+    background: #0782c1;
+    color: white;
+}
+
+.departments-container td a:last-child {
+    background: #dc2626;
+    color: white;
+}
+
+.departments-container td a:hover {
+    opacity: 0.85;
+}
+/* ================================
+   DEPARTMENT PAGE
+================================ */
+
+.departments-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #f0f8ff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.departments-container h1 {
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.departments-container h2 {
+    color: #005f9e;
+    margin: 15px 0;
+}
+
+.departments-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.departments-container label {
+    font-weight: bold;
+    color: #005f9e;
+}
+
+.departments-container input {
+    padding: 10px;
+    border: 1px solid #8cc8ed;
+    border-radius: 6px;
+}
+
+.departments-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #0782c1;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.departments-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.departments-container th {
+    background: #0782c1;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.departments-container td {
+    padding: 12px;
+    border-bottom: 1px solid #cce6f5;
+}
+
+.departments-container td a {
+    display: inline-block;
+    padding: 7px 12px;
+    margin: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    background: #0782c1;
+    color: white;
+    font-weight: bold;
+}
+
+.departments-container td a:last-child {
+    background: #dc2626;
+}
+/* =========================================
+   DEPARTMENT PAGE - FINAL
+========================================= */
+
+.departments-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+/* Title */
+.departments-container h1 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 25px;
+}
+
+/* Add / Edit heading */
+.departments-container h2 {
+    text-align: center;
+    color: #023e8a;
+    margin: 20px 0;
+}
+
+/* Form */
+.departments-container form {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+    padding: 25px;
+    background: #f1f9ff;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* Labels */
+.departments-container form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #023e8a;
+}
+
+/* Input boxes */
+.departments-container form input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #90caf9;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+/* Button */
+.departments-container form button {
+    display: block;
+    width: 200px;
+    margin: 25px auto 5px auto;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #0077b6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.departments-container form button:hover {
+    opacity: 0.85;
+}
+
+/* Table */
+.departments-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table heading */
+.departments-container table th {
+    background: #0077b6;
+    color: white;
+    padding: 14px 10px;
+    text-align: center;
+}
+
+/* Table cells */
+.departments-container table td {
+    padding: 13px 10px;
+    text-align: center;
+    border-bottom: 1px solid #d9eaf7;
+}
+
+/* Alternate rows */
+.departments-container table tr:nth-child(even) {
+    background: #f1f9ff;
+}
+
+/* Action buttons */
+.departments-container table td a {
+    display: inline-block;
+    padding: 7px 12px;
+    margin: 2px;
+    border-radius: 6px;
+    background: #0077b6;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Delete button */
+.departments-container table td a[href*="delete"] {
+    background: #d62828;
+}
+
+/* Hover */
+.departments-container table td a:hover {
+    opacity: 0.85;
+}
